@@ -1,0 +1,58 @@
+.header-content {
+    min-height: 75vh;
+    background: radial-gradient(circle, rgba(174, 231, 238, 1) 9%, rgba(148, 187, 233, 1) 88%);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 4.2rem;
+}
+
+.header-text {
+    margin-top: -1.8rem;
+    margin-bottom: 2.8rem;
+    opacity: 0.8;
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.blurb {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4.5rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        max-width: 90%;
+    }
+
+    .header-content {
+        min-height: 50vh;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,12 @@
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #000604;
+    overflow-y: scroll;
+}
+
+.search-results {
+    margin: 2.5rem;
+}
