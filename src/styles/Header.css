@@ -42,7 +42,7 @@
     }
 
     .header-content {
-        min-height: 50vh;
+        min-height: 50vh; /* Adjust the height for screens below 768px */
         padding: 1.5rem;
     }
 }
@@ -54,5 +54,9 @@
 
     .header-text {
         font-size: 1rem;
+    }
+
+    .header-content {
+        min-height: 10vh;
     }
 }
