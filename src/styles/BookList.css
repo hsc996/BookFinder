@@ -23,7 +23,7 @@
 
 .book-items:hover {
     border-radius: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .book-items a {
