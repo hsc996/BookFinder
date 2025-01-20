@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/Carousel.css";
 
+// eslint-disable-next-line no-unused-vars, react/prop-types
 export function Carousel({ onMount }) {
     const [books, setBooks] = useState([]);
   
