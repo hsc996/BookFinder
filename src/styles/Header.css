@@ -9,11 +9,11 @@
 }
 
 .header-title {
+    margin-top: 8rem;
     font-size: 4.2rem;
 }
 
 .header-text {
-    margin-top: -1.8rem;
     margin-bottom: 2.8rem;
     opacity: 0.8;
     max-width: 770px;
@@ -42,7 +42,7 @@
     }
 
     .header-content {
-        min-height: 50vh; /* Adjust the height for screens below 768px */
+        min-height: 50vh;
         padding: 1.5rem;
     }
 }
@@ -54,9 +54,5 @@
 
     .header-text {
         font-size: 1rem;
-    }
-
-    .header-content {
-        min-height: 10vh;
     }
 }

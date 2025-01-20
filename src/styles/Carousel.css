@@ -1,0 +1,33 @@
+.carousel-container {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    scrollbar-width: none;
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .carousel-items {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; 
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

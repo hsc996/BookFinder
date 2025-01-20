@@ -3,18 +3,18 @@
 }
 
 .user-input {
-    width: 800px; /* Increase the width of the input */
-    height: 40px; /* Slightly higher input box */
-    padding: 0 10px; /* Padding for inner spacing */
-    font-size: 16px; /* Larger text inside the input */
-    border: 1px solid #ccc; /* Border styling */
-    border-radius: 5px; /* Rounded corners */
+    width: 800px; 
+    height: 40px;
+    padding: 0 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
     margin-right: 10px;
 }
 
 button {
-    height: 40px; /* Same height as the input box */
-    padding: 0 15px; /* Horizontal padding */
+    height: 40px; 
+    padding: 0 15px; 
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
