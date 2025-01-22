@@ -37,12 +37,23 @@ export function Carousel({ onMount }) {
                 <div className="carousel-items">
                     {books.map((book, index) => (
                     <div className="carousel-item" key={book.id || index}>
-                        <img
+                        <img className="book"
                         src={book.volumeInfo.imageLinks?.thumbnail || "placeholder.jpg"}
                         alt={book.volumeInfo.title || "Book Cover"}
                         />
-                        <h4 className="name">{book.volumeInfo.title || "Untitled"}</h4>
-                        <h4 className="author">By {book.volumeInfo.authors}</h4>
+                        {book.volumeInfo.averageRating ? (
+                                <div className="stars">
+                                    {Array.from({ length: 5 }, (_, i) => (
+                                        <span key={i} className={i < book.volumeInfo.averageRating ? "star filled" : "star"}>
+                                            ★
+                                        </span>
+                                    ))}
+                                </div>
+                            ) : (
+                                <p className="no-rating">No rating available</p>
+                            )}
+                          <h4 className="name">{book.volumeInfo.title || "Untitled"}</h4>
+                          <h4 className="author">By {book.volumeInfo.authors}</h4>
                     </div>
                     ))}
                 </div>

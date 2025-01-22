@@ -27,3 +27,25 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.star {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.star.filled {
+    color: #ffb400;
+}
+
+.no-rating {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 0.5em;
+}

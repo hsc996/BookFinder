@@ -17,8 +17,19 @@ export function BookList({ books }) {
                                         alt={book.volumeInfo.title || "Book thumbnail"}
                                     />
                                 )}
-                                <h4 className="name">{book.volumeInfo.title}</h4>
-                                <h4 className="author">By {book.volumeInfo.authors}</h4>
+                                {book.volumeInfo.averageRating ? (
+                                <div className="stars">
+                                    {Array.from({ length: 5 }, (_, i) => (
+                                        <span key={i} className={i < book.volumeInfo.averageRating ? "star filled" : "star"}>
+                                            ★
+                                        </span>
+                                    ))}
+                                </div>
+                            ) : (
+                                <p className="no-rating">No rating available</p>
+                            )}
+                            <h4 className="name">{book.volumeInfo.title}</h4>
+                            <h4 className="author">By {book.volumeInfo.authors}</h4>
                             </a>
                         </div>
                     );

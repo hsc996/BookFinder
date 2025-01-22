@@ -25,9 +25,41 @@
   }
   
   .carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
+}
+
+.book {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.star {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.star.filled {
+  color: #ffb400;
+}
+
+.no-rating {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.5em;
+}
   
