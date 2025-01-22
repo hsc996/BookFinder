@@ -1,15 +1,18 @@
 .search-bar-inner {
     display: flex;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .user-input {
-    width: 800px; 
+    width: 70vw; 
     height: 40px;
     padding: 0 10px; 
     font-size: 16px; 
     border: 1px solid #ccc; 
     border-radius: 5px;
     margin-right: 10px;
+    box-sizing: border-box;
 }
 
 button {
@@ -48,4 +51,59 @@ button:hover {
     font-size: 0.75rem;
     color: #999;
     margin-top: 0.5em;
+}
+
+/* Mobile styling for screens below 768px */
+@media (max-width: 800px) {
+    .user-input {
+        max-width: 50vw;
+        height: 35px;
+        font-size: 14px;
+        padding: 0 8px; 
+    }
+
+    button {
+        height: 35px; 
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    .stars {
+        margin-top: 0.5em;
+    }
+
+    .star {
+        font-size: 0.9rem;
+    }
+
+    .no-rating {
+        font-size: 0.7rem;
+    }
+}
+
+/* Mobile styling for screens below 480px */
+@media (max-width: 480px) {
+    .user-input {
+        height: 30px; 
+        font-size: 12px;
+        padding: 0 6px; 
+    }
+
+    button {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 12px; 
+    }
+
+    .stars {
+        margin-top: 0.3em;
+    }
+
+    .star {
+        font-size: 0.8rem; 
+    }
+
+    .no-rating {
+        font-size: 0.6rem; 
+    }
 }

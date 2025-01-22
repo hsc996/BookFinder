@@ -1,4 +1,4 @@
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import Carousel from "../components/PopularCarousel";
 import Layout from "../components/Layout";
 import SearchPage from "../components/SearchPage";
